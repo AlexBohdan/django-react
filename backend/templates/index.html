@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta id="csrftoken" name="X-CSRFToken" content="{{ csrf_token }}">
+    <link rel="shortcut icon" href="{% static '/img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>React App</title></head>
+<body>
+<div id="root"></div>
+<script type="text/javascript" src="{% static  '/js/bundle.js' %}"></script>
+</body>
+</html>
